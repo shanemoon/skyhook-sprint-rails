@@ -1,0 +1,27 @@
+
+<%= link_to 'New Order', new_order_path %> <br>
+
+<div class ="name"> Order # </div>
+<div class = "prep_time"> Prep Time (min) </div>
+<div class ="time_left"> Time Left (min) </div>
+<div class ="person_left"> Did the customer leave?</div>
+
+<% Order.find(:all, :order => 'timeLeft ASC').each do |order| %>
+
+<div class="row">
+    <div class ="name"> <%= order.id %></div>
+    <div class ="prep_time"> <%= order.prepTime %>  </div>
+    <div class ="time_left"> <%= order.timeLeft %>  </div>
+    <div class ="person_left">
+      <% if order.personLeft %> <%= image_tag('car.png',:size=>'50x50') %>
+      <% else %> <%= image_tag('home.png',:size=>'50x50') %> <%end%>
+    </div>
+  
+
+  <div class ="expandy">
+    <%= render order.items %>
+  </div>
+
+</div>
+
+<% end %>

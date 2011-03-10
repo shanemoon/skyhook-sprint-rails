@@ -1,0 +1,29 @@
+  <div class ="name">
+
+    <% if item.name == 'sushi'%>
+      <%= image_tag('sushi.jpg',:size=>'60x60') %>
+    <%end%>
+
+    <% if item.name == 'steak'%>
+      <%= image_tag('steak.jpg',:size=>'60x60') %>
+    <%end%>
+    
+    <% if item.name == 'kimchi'%>
+      <%= image_tag('kimchi.jpg',:size=>'60x60') %>
+    <%end%>
+
+    <% if item.name == 'burger'%>
+      <%= image_tag('burger.jpg',:size=>'60x60') %>
+    <%end%>
+
+    <% if item.name == 'padthai'%>
+      <%= image_tag('padthai.jpg',:size=>'60x60') %>
+    <%end%>
+
+
+    <br> <%= item.name %>
+    
+  </div>
+  <div class = "prep_time"> <%= item.prepTime %></div>
+  <div class ="time_left"> </div>
+  <div class ="person_left"> </div> <br><br><br><br><br>

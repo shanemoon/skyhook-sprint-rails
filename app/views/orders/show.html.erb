@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Preptime:</b>
+  <%= @order.prepTime %>
+</p>
+
+<p>
+  <b>Timeleft:</b>
+  <%= @order.timeLeft %>
+</p>
+
+<p>
+  <b>Personleft:</b>
+  <%= @order.personLeft %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

@@ -1,3 +1,0 @@
-camera,camera store,-,I think I need a camera
-car,car store,-, I need some car too
-

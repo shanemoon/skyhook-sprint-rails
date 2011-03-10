@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  prepTime: 1
+  timeLeft: 1
+  personLeft: false
+
+two:
+  prepTime: 1
+  timeLeft: 1
+  personLeft: false

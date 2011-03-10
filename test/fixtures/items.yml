@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  prepTime: 1
+  order_id: 1
+  username: MyString
+
+two:
+  name: MyString
+  prepTime: 1
+  order_id: 1
+  username: MyString

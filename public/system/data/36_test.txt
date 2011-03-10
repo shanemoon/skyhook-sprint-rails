@@ -1,4 +1,0 @@
-car,car store,-,Hey I need to get a new car
-salt,salt store,-, I also have to buy some salt
-car,car store,-, And, I hope to get a new car by March
-

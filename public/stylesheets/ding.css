@@ -1,0 +1,85 @@
+.row {
+    clear:both;
+    padding: 0px 0px;
+    border-bottom-style:solid;
+    border-width:1px;
+    height:60px;
+    background-color: #f0f0f0;
+    vertical-align: bottom;
+}
+
+.name {
+    float:left;
+    text-align:center;
+}
+
+.prep_time {
+    float:left;
+    text-align:center;
+}
+
+.time_left {
+    float:left;
+    text-align:center;
+}
+
+.person_left {
+    float:left;
+    text-align:center;
+}
+
+.name, .prep_time, .time_left, .person_left {
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:20px;
+    width: 200px;
+}
+
+.expandy {
+    clear:both;
+    background-color: white;
+    padding: 1px 10px;
+}
+
+
+
+
+.form {
+    margin-left: 30px;
+    background-color:transparent
+}
+
+
+/****************************************/
+
+html {
+    background-color:#f0f0f0;
+    background-color:#cfd9dd;
+    background-color:#000000;
+
+}
+
+body {
+    width:800px;
+    margin:0px auto;
+    background-color:transparent;
+}
+
+#header {
+    background-color:transparent;
+    margin-top: 20px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    height:170px;
+
+
+}
+
+#header img {
+    border-style:solid;
+    border-width:0px 0px 20px 0px;
+    border-color:#1a3e4f;
+
+}
+
+
+/*****************************************/

@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-AITest::Application.load_tasks
+Ding::Application.load_tasks

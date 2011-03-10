@@ -1,0 +1,36 @@
+<div class="form">
+
+    <%= form_for(@order) do |f| %>
+      <% if @order.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+          <ul>
+          <% @order.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :prepTime %><br />
+        <%= f.text_field :prepTime %>
+      </div>
+
+      <div class="field">
+        <%= f.label :timeLeft %><br />
+        <%= f.text_field :timeLeft %>
+      </div>
+
+      <div class="field">
+        <%= f.label :personLeft %><br />
+        <%= f.check_box :personLeft %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
+
+</div>

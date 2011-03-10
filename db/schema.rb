@@ -10,19 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110306184951) do
+ActiveRecord::Schema.define(:version => 20110309234220) do
 
-  create_table "raw_inputs", :force => true do |t|
-    t.string   "input"
+  create_table "items", :force => true do |t|
+    t.string   "name"
+    t.integer  "prepTime"
+    t.integer  "order_id"
+    t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "schedules", :force => true do |t|
-    t.string   "item"
-    t.string   "place"
-    t.datetime "time"
-    t.string   "description"
+  create_table "orders", :force => true do |t|
+    t.integer  "prepTime"
+    t.integer  "timeLeft"
+    t.boolean  "personLeft"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
